@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{
+margin:0;
+padding:0;
+
+}
+
+input {
+	background-color: lightblue;
+	font-size: 90px;
+	width:100%;
+} 
+
+
+body {
+  background-color: lightblue;
+  font-family: inherit;
+}
+
+.um{
+	width:100%;
+	height: 15em;
+	background-color: red;
+	
+}
+.flexContainer {
+  display: flex;
+  background-color: DodgerBlue;
+  justify-content: center;
+ 
+  
+}
+.dois{
+	width:0%;
+	height: 10em;
+	background-color:green;
+}
+.tres{
+	width:65%;
+	height:50em;
+	background-color: blue;
+	margin:10em; 
+	border-radius: 9px 9px 9px 9px;
+	box-shadow: 1px 1px;
+	
+	
+}
+.tres div{
+	
+	margin:1em;
+	font-size: 3em;
+	color: #ffffff;
+	
+}
+.quatro{
+	width:100%;
+	height: 25em;
+	background-color: rgb(85, 86, 161);
+}
+.menuUm{
+	width:35%;
+	height: 20em;
+	/*background-color: #ca8181; */ 
+	display: flex;
+	flex-direction: column;
+	justify-content: initial;
+	
+}
+.linha{
+	width:70%;
+	height: 1em;
+	background-color: #ffffff;
+	padding: 4px;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	margin-left: 9px;
+	border-radius: 9px 9px 9px 9px;
+}
+#menuAberto{
+	display: none;
+	position: relative;
+	z-index: 1;
+	 
+
+
+}
+#menuAberto ul{
+	font-size: 80px;
+	
+}
+#menuFechado {
+	display: block;
+}
+
+#idNome{
+	/*
+	width:100%;
+	height: 3em;
+	*/
+}
+
+#idSenha{
+	/*
+	width:100%;
+	height: 3em;
+	*/
+}
+#idBotao{
+	box-shadow: 1px 1px;
+	width:100%;
+	height: 3em;
+	font-size: 80px;
+	border-radius: 9px 9px 9px 9px;
+	background-color: #faf4f4;
+}
+#idBotao:hover {
+cursor: pointer;
+}
+/*
+--------------------------------------Tela para computador--------------------------------------
+--------------------------------------Tela para computador--------------------------------------
+*/
+@media only screen and (min-width: 1000px) {
+	*{
+margin:0;
+padding:0;
+
+}
+
+input {
+	background-color: lightblue;
+	font-size: 20px;
+	width:100%;
+} 
+
+
+body {
+  background-color: lightblue;
+  font-family: inherit;
+}
+
+.um{
+	width:100%;
+	height: 2em;
+	background-color: red;
+	
+}
+.flexContainer {
+	display: flex;
+  background-color: DodgerBlue;
+  justify-content: center;
+ 
+  
+}
+.dois{
+	width:60%;
+	height:30em;
+	margin:0em; 
+	background-color:transparent;
+	
+}
+.tres{
+	width:40%;
+	height:25em;
+	background-color: blue;
+	margin:0em; 
+	border-radius: 9px 9px 9px 9px;
+	box-shadow: 1px 1px;
+	margin-top: 2em;
+	
+}
+.tres div{
+	
+	margin:1em;
+	font-size: 1em;
+	color: #ffffff;
+	
+}
+.quatro{
+	width:100%;
+	height: 10em;
+	background-color: rgb(85, 86, 161);
+}
+.menuUm{
+	width:5%;
+	height: 2em;
+	/*background-color: #ca8181; */ 
+	display: flex;
+	flex-direction: column;
+	justify-content: initial;
+	
+}
+.linha{
+	width:100%;
+	height: 0em;
+	background-color: #ffffff;
+	padding: 2px;
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+	margin-left: 0px;
+	border-radius: 9px 9px 9px 9px;
+}
+#menuAberto{
+	display: none;
+	position: relative;
+	z-index: 1;
+	 
+
+
+}
+#menuAberto ul{
+	font-size: 25px;
+	
+}
+#menuFechado {
+	display: block;
+}
+
+#idNome{
+	/*
+	width:100%;
+	height: 3em;
+	*/
+}
+
+#idSenha{
+	/*
+	width:100%;
+	height: 3em;
+	*/
+}
+#idBotao{
+	box-shadow: 1px 1px;
+	width:100%;
+	height: 2em;
+	font-size: 35px;
+	padding: 5px;
+	border-radius: 9px 9px 9px 9px;
+	background-color: #faf4f4;
+}
+#idBotao:hover {
+cursor: pointer;
+}
+
+
+}
+
+/*
+--------------------------------------Tela para computador--------------------------------------
+--------------------------------------Tela para computador--------------------------------------
+*/
+</style >
+</head>
+<body>
+	<div class="um">
+		<div id="menuFechado"> 
+			<div class="menuUm" onclick="telaUmMenu()">
+				<div class="linha"></div>
+				<div class="linha"></div>
+				<div class="linha"></div>
+			
+			</div>
+		</div>
+
+		<div id="menuAberto">
+			<div class="menuUm " onclick="telaDoisMenu()">
+				<div class="linha"></div>
+				<div class="linha"></div>
+				<div class="linha"></div>
+			
+			</div>
+			<ul>
+				<li><p>coisa1</p></li>
+				<li><p>coisa2</p></li>
+				<li><p>coisa3</p></li>
+			</ul>
+		</div>
+
+	</div>
+	
+		
+
+	</div>
+	<div class="flexContainer ">
+		<div class="dois"></div>
+		<div class="tres">
+			<div>
+				<h1>login/cadastro</h1>
+				<form action="">
+					<label for="fname">nome:</label><br>
+					<input type="text" id="idNome" name="nome" ><br>
+					<label for="lname">senha:</label><br>
+					<input type="text" id="idSenha" name="senha" ><br><br>
+					<input type="submit" id="idBotao" value="login">
+				</form> 
+			</div>
+
+		</div>
+	</div>
+	
+	<div class="quatro"></div>
+	
+
+	<script>
+	function telaUmMenu() {
+		document.getElementById("menuAberto").style.display = "block";
+		document.getElementById("menuFechado").style.display = "none";
+	  }
+	  function telaDoisMenu() {
+		document.getElementById("menuAberto").style.display = "none";
+		document.getElementById("menuFechado").style.display = "block";
+	  }
+	 
+	  </script>
+</html>
